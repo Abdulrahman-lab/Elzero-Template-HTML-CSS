@@ -800,7 +800,7 @@ section.services {
 }
 .services .container .box::before {
     position: absolute;
-    background-color: var(--main-color);
+    background-color: #d5d5d5;
     content: '';
     bottom: 0;
     left: 60px;
