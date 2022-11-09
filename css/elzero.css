@@ -82,6 +82,12 @@ input {
 input:focus {
     outline: none;
 }
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
 /* Small */
 @media (min-width: 768px) {
     .container {
