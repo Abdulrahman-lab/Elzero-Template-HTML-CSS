@@ -800,7 +800,7 @@ section.services {
 }
 .services .container .box::before {
     position: absolute;
-    background-color: #d5d5d5;
+    background-color: #f6f5f5;
     content: '';
     bottom: 0;
     left: 60px;
@@ -1053,6 +1053,11 @@ section.events {
     border-radius: 6px;
     transition: var(--transition-duration);
 }
+@media (max-width: 350px) {
+    .events .container .dates-container .date {
+        flex-basis: 49%;
+    }
+}
 .events .container .dates-container .date:hover {
     border-color: var(--main-color);
 }
@@ -1095,7 +1100,7 @@ section.events {
 .events .subscribe {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: fit-content;
     margin: 20px auto 0;
     border-radius: 50px;
     border: 30px solid #f6f5f5;
@@ -1103,6 +1108,8 @@ section.events {
 @media (max-width: 767px) {
     .events .subscribe {
         flex-direction: column;
+        border-radius: 0;
+        width: 100%;
     }
 }
 .events .subscribe input[type="email"] {
@@ -1163,7 +1170,7 @@ section.pricing {
 .pricing .container .box::before {
     content: '';
     position: absolute;
-    height: 61%;
+    height: 58.8%;
     width: 0;
     bottom: 0;
     right: 0;
